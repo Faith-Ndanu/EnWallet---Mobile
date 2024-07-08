@@ -3,14 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/tvMoney"
+            android:id="@+id/money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -38,7 +44,7 @@
             android:layout_marginTop="16dp"
             android:text="KES 42400"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/tvMoney" />
+            app:layout_constraintTop_toBottomOf="@+id/money" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -48,7 +54,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toStartOf="@+id/tvMoneyout"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/tvMoney"
+            app:layout_constraintStart_toEndOf="@+id/money"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/expense" />
 
@@ -139,8 +145,8 @@
 
         <FrameLayout
             android:id="@+id/frameLayout"
-            android:layout_width="422dp"
-            android:layout_height="186dp"
+            android:layout_width="372dp"
+            android:layout_height="174dp"
             android:layout_marginTop="3dp"
             android:layout_marginEnd="3dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -150,7 +156,7 @@
         </FrameLayout>
 
         <FrameLayout
-            android:id="@+id/frameLayout2"
+            android:id="@+id/salary"
             android:layout_width="381dp"
             android:layout_height="82dp"
             android:layout_marginTop="28dp"
@@ -170,7 +176,7 @@
                 app:srcCompat="@drawable/income_trx" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tvSalary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
@@ -179,20 +185,20 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="80dp"
-                android:layout_marginTop="55dp"
-                android:text="KES 40,000" />
-
-            <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tvDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="250dp"
                 android:layout_marginTop="55dp"
                 android:text="1 july 2024" />
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="40dp"
+                android:text="KES 7000" />
         </FrameLayout>
 
         <FrameLayout
@@ -206,7 +212,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+            app:layout_constraintTop_toBottomOf="@+id/salary">
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -231,7 +237,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="45dp"
-                android:text="TextView" />
+                android:text="KES 30000" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -276,7 +282,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="50dp"
-                android:text="TextView" />
+                android:text="KES 4500" />
 
             <TextView
                 android:id="@+id/textView19"
@@ -321,7 +327,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="80dp"
                 android:layout_marginTop="45dp"
-                android:text="Kes 4500" />
+                android:text="KES 4500" />
 
             <TextView
                 android:id="@+id/textView22"
